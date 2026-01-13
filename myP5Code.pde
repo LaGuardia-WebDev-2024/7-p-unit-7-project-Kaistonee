@@ -4,22 +4,27 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
+var sunSize=40;
 
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
- 
+ noStroke();
   background(255,255,255,0);
-  
 
+//sun
+fill(255, 204 ,0);
+ellipse(300, 75, sunSize, sunSize);
+ 
+if(sunSize <200){ sunSize = sunSize + 1;}
 
 
 
 
   //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
-
 }
+
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
