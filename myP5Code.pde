@@ -5,6 +5,7 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var sunSize=40;
+var armSize=10;
 
 
 //🟢Draw Procedure - Runs on Repeat
@@ -15,6 +16,19 @@ draw = function(){
 //sun
 fill(255, 204 ,0);
 ellipse(300, 75, sunSize, sunSize);
+
+//right arm
+fill (0, 0, 0);
+rect(331, 170, 10, 60);
+//torso
+fill (40, 0, 200);
+rect(300, 227, 41, 40);
+
+
+
+
+
+
  
 if(sunSize <200){ sunSize = sunSize + 1;}
 
